@@ -1,0 +1,23 @@
+id: newrelic-ingest-metric
+displayName: New Relic Ingest Metric
+description: |
+  This quickstart provides a synthetic monitor (and associated dashboard) that will regularly query ingest for each data type (APM Events, Infrastructure Processes, etc.) and post it to the Metric API as a custom metric `newrelic-ingest-metric`. This means that you can query and analyze ingest across your account for 13 months by default, instead of 8 days for events, 30 days for  Logs, etc. The custom metric also includes a facet for each data type, so that you can see, for example, ingest for Mobile Events by appName or Logging by labels.app.
+icon: logo.png
+install:
+  primary:
+    nerdlet:
+      nerdletId: 
+      requiresAccount: false
+  fallback:
+    link:
+      url: https://github.com/newrelic-experimental/nr1-ingest-metric-script
+keywords:
+  - ingest
+  - ingestion
+  - custom metric
+  - synthetic monitor
+  - consumption
+  - billing
+  - facet
+categoryTerms:
+  - other
